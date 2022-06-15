@@ -1,0 +1,36 @@
+.sidebar .logo{
+    width: 70%;
+    margin:0 0 2rem 1rem;
+}
+.logo a{
+    color: var(--primary);
+    font-weight: 900;
+}
+.menu{
+    width: 100%;
+    padding:0 1rem 1rem 1rem;
+}
+.menu h4{
+    margin-bottom: 0rem;
+    cursor: pointer;
+    color: var(--dark);
+}
+.menu ul{
+    list-style: none;
+    display: none;
+}
+.menu ul li{
+    margin:.5rem 0 .5rem .5rem;
+}
+
+@media(max-width:1024px){
+    .sidebar .logo{
+        display: none;
+    }
+    .menu h4{
+        margin-left: 1rem;  
+    }
+    .menu ul li{
+        margin:.5rem 0 .5rem 1.5rem;
+    }
+ }

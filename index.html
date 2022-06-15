@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyShop</title>
+    <!-- highlight   -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <img src="logo.png" alt="logo" class="logo">
+            <div class="menu">
+                <h4>Installation</h4>
+                <ul>
+                    <li><a href="#git_clone">git clone project</a></li>
+                    <li><a href="#">composer install</a></li>
+                    <li><a href="#">copy .env.example file</a></li>
+                    <li><a href="#">key generate</a></li>
+                    <li><a href="#">start server</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <h4>Configuration</h4>
+                <ul>
+                    <li><a href="#">config .env file</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <h4>Authentication</h4>
+                <ul>
+                    <li><a href="#">roles</a></li>
+                    <li><a href="#">sanctum tokens</a></li>
+                    <li><a href="#">middleware</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <h4>Database</h4>
+                <ul>
+                    <li><a href="#">normalizatoin</a></li>
+                    <li><a href="#">tables</a></li>
+                    <li><a href="#">table fields</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <h4>Usage</h4>
+                <ul>
+                    <li><a href="#">users</a></li>
+                    <li><a href="#">products</a></li>
+                    <li><a href="#">categories</a></li>
+                    <li><a href="#">orders</a></li>
+                    <li><a href="#">order_details</a></li>
+                </ul>
+            </div>
+            <div class="menu">
+                <h4>Insomnia</h4>
+                <ul>
+                    <li><a href="#">download json</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="logo.png" alt="">
+                </div>
+                <div class="navbar-toggler">
+                    <div class=""></div>
+                    <div class=""></div>
+                    <div class=""></div>
+                </div>
+            </div>
+            <section class="container" id="installation">
+                <h1>Installation</h1>
+                <div class="titles">
+                    <ul>
+                        <li><a href="#git_clone"># git clone project</a></li>
+                        <li><a href="#compoer_install"># composer install</a></li>
+                        <li><a href="#key_generate"># key generate</a></li>
+                        <li><a href="#start server"># start server</a></li>
+                    </ul>
+                </div>
+                <h4 class="sub-title" id="git_clone">Git clone porject</h4>
+                <p>
+                    ပထမဆုံး project ကို clone ဖို့အတွက် htdocs folder ထဲမှာ right click နှိပ် open in terminal
+                    ကိုရွေးပြီး
+                    အောက်က command ကို
+                    run ပေးပါ၊
+                </p>
+                <pre class="">
+                    <code class="language-html">
+                        git-clone https://github.com/ama-webdev/shop.git 
+                    </code>
+                </pre>
+                <h4 class="sub-title">Composer install </h4>
+                ပြီးရင် project မှာပါမယ့် package တွေကို composer အကူအညီနဲ့ install လုပ်ပါမယ်။ install လုပ် ဖို့အတွက်
+                project folder ထဲမှာ
+                terminal ဖွင့်ပြီး အောက်က command ကို ပေးပါ။
+                <pre class="">
+                    <code class="language-html">
+                        composer install
+                    </code>
+                </pre>
+                <h4 class="sub-title">Key generate</h4>
+                <p>
+                    laravel project တစ်ခု run ဖို့အတွက် key တစ်ခု လိုပါတယ်။ project ကို create လုပ်ရင် key ကို auto
+                    generate လုပ်ပေးပေမယ့် git က clone ထားရင်တော့ generate လုပ်ပေးဖို့ လိုပါတယ်။ အောက်က command ကို run
+                    ပေးပါ။
+                </p>
+                <pre class="">
+                    <code class="language-html">
+                        php artisan key:generate
+                    </code>
+                </pre>
+                <h4 class="sub-title">start server</h4>
+                <pre class="">
+                    <code class="language-html">
+                        php artisan serve 
+                    </code>
+                </pre>
+            </section>
+            <section class="container" id="installation">
+                <h1>Configuration</h1>
+                <div class="titles">
+                    <ul>
+                        <li><a href="#config_env"># Config .env</a></li>
+                    </ul>
+                </div>
+                <h4 class="sub-title" id="config_env">Config .env</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus ad provident voluptates
+                    nesciunt dolorum nisi temporibus ipsam velit, facilis cum ducimus, culpa vitae magni inventore
+                    dolorem ipsum quae incidunt!
+                </p>
+            </section>
+            <section class="container" id="authentication">
+                <h1>Authentication</h1>
+                <div class="titles">
+                    <ul>
+                        <li><a href="#"># roles</a></li>
+                        <li><a href="#"># sanctum tokens</a></li>
+                        <li><a href="#"># middleware</a></li>
+                    </ul>
+                </div>
+                <h4 class="sub-title" id="">Roles</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus ad provident voluptates
+                    nesciunt dolorum nisi temporibus ipsam velit, facilis cum ducimus, culpa vitae magni inventore
+                    dolorem ipsum quae incidunt!
+                </p>
+                <h4 class="sub-title">Sanctum tokens </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quis placeat culpa eligendi ipsam
+                    rem. Iusto quasi quibusdam dolore saepe vel beatae et, omnis hic ut vero. Accusantium, quo
+                    doloremque?
+                </p>
+                <h4 class="sub-title">Middleware</h4>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, error praesentium! Dolor unde
+                    doloremque earum et quibusdam harum magni enim aliquid consequuntur tenetur? Fugit facere sed itaque
+                    doloribus, aperiam cumque!
+                </p>
+            </section>
+            <section class="container" id="database">
+                <h1>Database</h1>
+                <div class="titles">
+                    <ul>
+                        <li><a href="#"># normalizatoin</a></li>
+                        <li><a href="#"># tables</a></li>
+                        <li><a href="#"># table fields</a></li>
+                    </ul>
+                </div>
+                <h4 class="sub-title" id="">Normalizatoin</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus ad provident voluptates
+                    nesciunt dolorum nisi temporibus ipsam velit, facilis cum ducimus, culpa vitae magni inventore
+                    dolorem ipsum quae incidunt!
+                </p>
+                <h4 class="sub-title">Tables </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quis placeat culpa eligendi ipsam
+                    rem. Iusto quasi quibusdam dolore saepe vel beatae et, omnis hic ut vero. Accusantium, quo
+                    doloremque?
+                </p>
+                <h4 class="sub-title">Table fields</h4>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, error praesentium! Dolor unde
+                    doloremque earum et quibusdam harum magni enim aliquid consequuntur tenetur? Fugit facere sed itaque
+                    doloribus, aperiam cumque!
+                </p>
+            </section>
+            <section class="container" id="usage">
+                <h1>Usage</h1>
+                <div class="titles">
+                    <ul>
+                        <li><a href="#"># users</a></li>
+                        <li><a href="#"># products</a></li>
+                        <li><a href="#"># categories</a></li>
+                        <li><a href="#"># orders</a></li>
+                        <li><a href="#"># order_details</a></li>
+                    </ul>
+                </div>
+                <h4 class="sub-title" id="">Users</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus ad provident voluptates
+                    nesciunt dolorum nisi temporibus ipsam velit, facilis cum ducimus, culpa vitae magni inventore
+                    dolorem ipsum quae incidunt!
+                </p>
+                <h4 class="sub-title">Categories </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, quis placeat culpa eligendi ipsam
+                    rem. Iusto quasi quibusdam dolore saepe vel beatae et, omnis hic ut vero. Accusantium, quo
+                    doloremque?
+                </p>
+                <h4 class="sub-title">Products</h4>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, error praesentium! Dolor unde
+                    doloremque earum et quibusdam harum magni enim aliquid consequuntur tenetur? Fugit facere sed itaque
+                    doloribus, aperiam cumque!
+                </p>
+                <h4 class="sub-title">Orders</h4>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, error praesentium! Dolor unde
+                    doloremque earum et quibusdam harum magni enim aliquid consequuntur tenetur? Fugit facere sed itaque
+                    doloribus, aperiam cumque!
+                </p>
+                <h4 class="sub-title">Order details</h4>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, error praesentium! Dolor unde
+                    doloremque earum et quibusdam harum magni enim aliquid consequuntur tenetur? Fugit facere sed itaque
+                    doloribus, aperiam cumque!
+                </p>
+            </section>
+            <section class="container" id="insomnia">
+                <h1>Insomnia</h1>
+                <div class="titles">
+                    <ul>
+                        <li><a href="#"># download</a></li>
+                    </ul>
+                </div>
+                <h4 class="sub-title" id="">Download</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum doloribus ad provident voluptates
+                    nesciunt dolorum nisi temporibus ipsam velit, facilis cum ducimus, culpa vitae magni inventore
+                    dolorem ipsum quae incidunt!
+                </p>
+            </section>
+        </div>
+    </div>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- highlight -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <!-- script -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

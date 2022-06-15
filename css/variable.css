@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root{
+    --primary:rgb(249 50 44);  
+    --secondary:#09f;
+    --dark:#333;    
+    --open-san:'Open Sans';
+}

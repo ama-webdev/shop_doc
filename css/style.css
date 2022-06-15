@@ -1,0 +1,49 @@
+@import url(variable.css);
+@import url(utilities.css);
+@import url(sidebar.css);
+@import url(main.css);
+::-webkit-scrollbar{
+    display: none;
+}
+.wrapper{
+    display: flex;
+    height: calc(100vh - 3rem);
+    max-width: 1300px;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+.sidebar{
+    width: 250px;
+    height: 100%;
+    border-right: 1px solid #ddd;
+    overflow: scroll;
+}
+.main{
+    width: calc(100% - 250px);
+    height: 100%;
+    padding: 0 4rem;
+    overflow: scroll;
+}
+.main.active{
+    overflow: hidden;
+}
+
+@media(max-width:1024px){
+    .wrapper{
+        margin:0;
+    }
+    .sidebar{
+        display: none;
+        position: absolute;
+        top: 7rem;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        min-height: fit-content;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 12px;
+    }
+    .main{
+        width: 100%;
+        padding: 2rem 1.5rem;
+    }
+}
